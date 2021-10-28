@@ -25,26 +25,21 @@ public class LoginTest extends Baseclass {
 	@Test
 	public void NegativeLogin(String UsernameVal, String PasswordVal) {
 		
+		test = report.startTest("Negative Login Test");
 		LoginPage login = new LoginPage();
 		login.Login(UsernameVal,PasswordVal);
-		
-		WebElement Error = driver.findElement(By.id("msg_box"));
-		String Actualmsg = Error.getText();
-		String Expectedmsg = "The email or password you have entered is invalid.";
-		//Assert.assertEquals(Actualmsg,Expectedmsg);
-		
-		SoftAssert soft = new SoftAssert();
-		soft.assertEquals(Actualmsg,Expectedmsg);
-		soft.assertAll();
-		
-		
+		login.ErrorCheck();
+		report.endTest(test);
+			
 	}
 	
 	@Parameters({"UserName","CorrectPassword"})
 	@Test
 	public void PositiveLogin(String UserNameVal, String PasswordVal) {
+		test = report.startTest("Positivr Login Test");
 		LoginPage login = new LoginPage();
 		login.Login(UserNameVal,PasswordVal);
+		report.endTest(test);
 	}
 	
 	

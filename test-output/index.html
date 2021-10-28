@@ -205,18 +205,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'NegativeLogin')
+data.setCell(0, 1, 'PositiveLogin')
 data.setCell(0, 2, 'test.LoginTest')
-data.setCell(0, 3, 3237);
+data.setCell(0, 3, 3101);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'PositiveLogin')
+data.setCell(1, 1, 'NegativeLogin')
 data.setCell(1, 2, 'test.LoginTest')
-data.setCell(1, 3, 3016);
+data.setCell(1, 3, 2357);
 window.suiteTableData['Simplilearn']= { tableData: data, tableDiv: 'times-div-Simplilearn'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Simplilearn">
               </div> <!-- times-div-Simplilearn -->
             </div> <!-- times-div -->
@@ -243,30 +243,38 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">test.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">ReportSetup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">194 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">NegativeLogin(abc@gmail.com, Abcd@123)</span>
-                <span class="method-start">1562 ms</span>
+                <span class="method-start">1816 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">4802 ms</span>
+                <span class="method-start">4175 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">4872 ms</span>
+                <span class="method-start">4251 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">PositiveLogin(abc@gmail.com, Abce@123)</span>
-                <span class="method-start">6119 ms</span>
+                <span class="method-start">5608 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">9136 ms</span>
+                <span class="method-start">8710 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">ReportTearDown</span>
+                <span class="method-start">8782 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
